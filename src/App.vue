@@ -1,6 +1,7 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
 import TheWelcome from './components/TheWelcome.vue'
+import Task from '@/components/Task.vue'
 </script>
 
 <template>
@@ -9,6 +10,9 @@ import TheWelcome from './components/TheWelcome.vue'
 
     <div class="wrapper">
       <HelloWorld msg="You did it!" />
+    </div>
+    <div>
+      <Task :task="[{id:1,title:1,state:'TASK_INBOX'}]" />
     </div>
   </header>
 
