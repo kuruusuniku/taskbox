@@ -1,5 +1,5 @@
 // プレゼンテーション バージョン
-import PureTaskList from './PureTaskList.vue';
+import PureTaskList from '../components/PureTaskList.vue';
 
 import * as TaskStories from './Task.stories';
 
