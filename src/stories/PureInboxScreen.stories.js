@@ -1,5 +1,5 @@
 
-import PureInboxScreen from './PureInboxScreen.vue';
+import PureInboxScreen from '../components/PureInboxScreen.vue';
 import { fireEvent, within } from '@storybook/test';
 
 export default {

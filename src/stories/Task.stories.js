@@ -1,7 +1,7 @@
 
 import { fn } from '@storybook/test';
 
-import Task from './Task.vue';
+import Task from '../components/Task.vue';
 
 export const ActionsData = {
   onPinTask: fn(),

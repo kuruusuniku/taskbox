@@ -1,5 +1,5 @@
 
-import TaskList from './TaskList.vue';
+import TaskList from '../components/TaskList.vue';
 
 import * as TaskStories from './Task.stories';
 import { userEvent } from '@storybook/test'
