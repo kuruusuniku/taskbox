@@ -1,4 +1,4 @@
-
+// プレゼンテーション バージョン
 import PureTaskList from './PureTaskList.vue';
 
 import * as TaskStories from './Task.stories';
@@ -7,12 +7,21 @@ export default {
   component: PureTaskList,
   title: 'PureTaskList',
   tags: ['autodocs'],
-  decorators: [() => ({ template: '<div style="margin: 3em;"><story/></div>' })],
+  decorators: [
+    /**
+     * Decorator to add margin around the story.
+     * @returns {Object} - A Vue component template with margin.
+     */
+    () => ({ template: '<div style="margin: 3em;"><story/></div>' })
+  ],
   args: {
     ...TaskStories.ActionsData,
   }
 };
 
+/**
+ * Default story for the PureTaskList component.
+ */
 export const Default = {
   args: {
     // Shaping the stories through args composition.
@@ -28,6 +37,9 @@ export const Default = {
   },
 };
 
+/**
+ * Story for the PureTaskList component with pinned tasks.
+ */
 export const WithPinnedTasks = {
   args: {
     // Shaping the stories through args composition.
@@ -39,6 +51,9 @@ export const WithPinnedTasks = {
   },
 };
 
+/**
+ * Story for the PureTaskList component in a loading state.
+ */
 export const Loading = {
   args: {
     tasks: [],
@@ -46,6 +61,9 @@ export const Loading = {
   },
 };
 
+/**
+ * Story for the PureTaskList component with no tasks.
+ */
 export const Empty = {
   args: {
     // Shaping the stories through args composition.
